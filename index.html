@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestão de Hotel - Página Inicial</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Gestão de Hotel</h1>
+        <p class="lead">Bem-vindo ao sistema de gestão de reservas</p>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hotel Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quartos">Quartos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservas">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#relatorios">Relatórios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Gestão de Quartos</h2>
+                <p>Visualize e gerencie a lista de quartos disponíveis no hotel.</p>
+                <a href="#quartos" class="btn btn-primary">Ver Quartos</a>
+            </div>
+            <div class="col-md-6">
+                <h2>Reservas</h2>
+                <p>Gerencie as reservas de hóspedes de forma fácil e rápida.</p>
+                <a href="#reservas" class="btn btn-primary">Gerenciar Reservas</a>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>Relatórios</h2>
+                <p>Veja relatórios detalhados sobre as reservas e faturamento.</p>
+                <a href="#relatorios" class="btn btn-primary">Ver Relatórios</a>
+            </div>
+            <div class="col-md-6">
+                <h2>Sobre o Sistema</h2>
+                <p>Saiba mais sobre o sistema de gestão de hotéis e suas funcionalidades.</p>
+                <a href="#sobre" class="btn btn-primary">Saiba Mais</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Gestão de Hotel. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
